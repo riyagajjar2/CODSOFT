@@ -17,7 +17,7 @@ public class StudentGradeCalculator {
             float[] marks = new float[numOfSubjects];
 
             for (int i = 0; i < numOfSubjects; i++) {
-                System.out.print("Enter " + (i + 1) + "(out of 100) : ");
+                System.out.print("Enter " + (i + 1) + " Subject Marks (out of 100) : ");
                 float mark = sc.nextFloat();
                 if (mark >= 0 && mark<=100) {
                     marks[i] = mark;
@@ -38,15 +38,15 @@ public class StudentGradeCalculator {
 
             // Grade calculation
             if (average_percentage > 80 && average_percentage <= 100) {
-                System.out.println("Corresponding Grade is A");
+                System.out.println("Corresponding Grade is: A");
             } else if (average_percentage > 60 && average_percentage <= 80) {
-                System.out.println("Corresponding Grade is B");
+                System.out.println("Corresponding Grade is: B");
             } else if (average_percentage > 40 && average_percentage <= 60) {
-                System.out.println("Corresponding Grade is C");
+                System.out.println("Corresponding Grade is: C");
             } else if (average_percentage >= 33 && average_percentage <= 40) {
-                System.out.println("Corresponding Grade is D");
+                System.out.println("Corresponding Grade is: D");
             } else {
-                System.out.println("Corresponding Grade is F");
+                System.out.println("Corresponding Grade is: F");
             }
 
         } catch (Exception e) {
